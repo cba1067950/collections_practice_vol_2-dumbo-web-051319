@@ -82,6 +82,7 @@ end
 
 def organize_schools(array)
   newHash = {}
+<<<<<<< HEAD
   schoolArray = []
   array.each do |key, element|
     location = element.fetch(:location)
@@ -92,5 +93,15 @@ def organize_schools(array)
     newHash[location] << key    
   end
   
+=======
+  array.each do |key, element|
+    newHash.merge("NYC", key)
+    binding.pry
+    #if element.fetch(:location) == "NYC"
+    #  binding.pry
+    #end
+  end
+  binding.pry
+>>>>>>> b384cb105a3bd087188ab0484459cf920cc45b7b
   newHash
 end
